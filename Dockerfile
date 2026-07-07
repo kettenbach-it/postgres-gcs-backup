@@ -1,8 +1,8 @@
-FROM python:alpine3.20
+FROM python:alpine3.21
 
 RUN apk add --update \
   bash \
-  postgresql16 \
+  postgresql17 \
   curl \
   && pip install gsutil \
   && rm -rf /var/cache/apk/*
